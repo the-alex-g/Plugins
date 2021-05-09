@@ -8,19 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "NoiseRNG",
-"language": "GDScript",
-"path": "res://Noise/NoiseRNG.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"NoiseRNG": ""
+
 }
 
 [application]
 
-config/name="NewProject"
+config/name="Plugins"
 config/icon="res://icon.png"
 
 [display]
@@ -31,6 +26,10 @@ window/stretch/aspect="keep"
 [editor]
 
 script_templates_search_path="../template_scripts"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "RandomNumberGenerator" )
 
 [rendering]
 
